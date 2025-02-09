@@ -1,4 +1,4 @@
-name: Daily Commit Workflow -  22f3000038@ds.study.iitm.ac.in  
+name: Daily Commit Workflow - 22f3000038@ds.study.iitm.ac.in  # Include email in the name
 
 on:
   schedule:
@@ -14,13 +14,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Make a dummy change (if needed)
+      - name: Make a dummy change - 22f3000038@ds.study.iitm.ac.in
         run: |
           # This step can modify any file or create a new file
           echo "Automated commit $(date)" > daily_commit.txt
           cat daily_commit.txt
 
-      - name: Commit and push changes
+      - name: Commit and push changes - 22f3000038@ds.study.iitm.ac.in
         run: |
           git config --local user.email "22f3000038@ds.study.iitm.ac.in"  # Your email address
           git config --local user.name "GitHub Actions"
